@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sihota Tutoring</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/styling/reset.css" />
+    <link rel="stylesheet" href="/styling/email-form.css" />
+</head>
+    <body>
+        <h1>Thank you for writing a review!</h1>
+        <span>Let me and others know what you think.</span>
+        
+        <form class="email-form">
+
+            <section class="name-input">
+                <div>
+                    <label for="firstName-input">First Name</label>
+                    <input id="firstName-input" type="text" placeholder="First name" required>
+                </div>
+                <div>
+                    <label for="lastName-input">Last Name</label>
+                    <input id="lastName-input" type="text" placeholder="Last name" required>
+                </div>
+            </section>
+
+            <label for="textbox-input">Your review</label>
+            <textarea id="textbox-input" placeholder="Enter your review here" required></textarea>
+
+
+            <div class="button-container">
+                <button id="email-form-submit" type="submit">Submit &#8594</button>
+                <div id="pseudo">Submit &#8594</div>
+            </div>
+
+            <div class="button-container delete-container">
+                <button id="delete-review-but" type="submit">Delete</button>
+                <div id="pseudo-delete">Delete</div>
+            </div>
+            
+        </form>
+    </body>
+    <!-- javascript -->
+    <script src="/scripts/review-form.js"></script>
+</html>

@@ -1,0 +1,132 @@
+.background-wrap-testimonies {
+    background: var(--clr-grey-4);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.testimonies {
+    max-width: 50rem;
+    
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: 250px 2px 1fr;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 var(--clr-grey-2);
+    border-radius: 10px;
+    text-align: left;
+    min-height: 300px;
+}
+
+.review-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info-holder {
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.info-holder img {
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    filter: invert(65%) sepia(20%) saturate(5267%) hue-rotate(177deg) brightness(97%) contrast(85%);
+}
+
+.info-holder h4 {
+    padding: 0;
+}
+
+.review-grid span {
+    font-size: 120%;
+    color: var(--clr-grey-2);
+}
+
+.review-text {
+    padding: 40px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 10px;
+}
+
+.vl {
+    background-image: linear-gradient(to bottom, rgba(25, 105, 160, 0), var(--clr-primary-dark), rgba(25, 105, 160, 0));
+    margin: 50px 0;
+}
+
+.review-arrows,
+.grid-but {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-right,
+.arrow-left {
+    filter: invert(29%) sepia(82%) saturate(982%) hue-rotate(175deg) brightness(92%) contrast(87%);
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    transition-duration: 0.5s;
+}
+
+.arrow-right:hover,
+.arrow-left:hover {
+    filter: invert(65%) sepia(20%) saturate(5267%) hue-rotate(177deg) brightness(97%) contrast(85%);
+    cursor: pointer;
+}
+
+.button {
+    padding: 15px;
+    background-color: var(--clr-primary-dark);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: var(--light-shadow);
+}
+
+@media (max-width: 880px) {
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid h4{
+        display: inline;
+    }
+
+    #review-date {
+        float: right;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .review-text {
+        padding: 0 40px;
+    }
+}
+
+.restrict {
+    opacity: 0.2;
+}
+.restrict:focus {
+    cursor: initial;
+}

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+    /* primary/main color */
+    --clr-primary-dark: rgb(25, 105, 160);
+    --clr-primary: #46A5E6;
+    --clr-primary-light: rgb(188, 226, 253);
+
+    /* grey used for headings */
+    --clr-grey-1: #102A42;
+    --clr-grey-2: #324D67;
+    /* grey used for paragraphs */
+    --clr-grey-3: #617D98;
+    --clr-grey-4: #9EB2C7;
+    --clr-grey-5: #DAE2EC;
+    --clr-grey-6: #f4f4f4;
+
+    --clr-wave: #F8FAFB;
+    --clr-white: #fff;
+    --clr-orange: #e6a646;
+    --clr-red: #e65646;
+    --clr-green: #6BE675;
+    --clr-black: #222;
+
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: 'Playfair Display', serif;
+    --spacing: 0.1rem;
+    --radius: 0.5rem;
+
+    --transition: all 0.3s linear;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ff-secondary);
+    background: var(--clr-grey-6);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  line-height: 1.25;
+  font-family: var(--ff-secondary);
+}
+
+h2 {
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+h3 {
+  font-size: 2.5rem;
+  padding: 3rem 0;
+}
+h4 {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+}
+p {
+  color: var(--clr-grey-2);
+}
+
+@media screen and (min-width: 1080px) {
+
+  h2 {
+    font-size: 3.5rem;
+  }
+  body {
+    font-size: 1.2rem;
+  }
+
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+
+  .section-center {
+    width: 95vw;
+  }
+}
+
+/* section {
+  border: solid 1px red;
+} */
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.background-wrap-how-it-works,
+.background-wrap-what-i-offer {
+  position: relative;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -125px;
+  visibility: hidden;
+}
+
+hr {
+  width: 80%;
+  margin: 30px auto;
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(213, 179, 80, 0), var(--clr-orange), rgba(213, 179, 80, 0));
+}
+
+footer {
+  background-color: var(--clr-grey-3);
+  color: rgb(209, 209, 209);
+  padding: 20px;
+  font-family: var(--ff-primary);
+}

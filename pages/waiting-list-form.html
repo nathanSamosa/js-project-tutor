@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sihota Tutoring</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/styling/reset.css" />
+    <link rel="stylesheet" href="/styling/email-form.css" />
+</head>
+    <body>
+        <h1>Join the waiting list!</h1>
+        <span>Be the first to know when I begin holding sessions on Saturdays.</span>
+        
+        <form class="email-form">
+
+            <section class="name-input">
+                <div>
+                    <label for="firstName-input">First Name</label>
+                    <input id="firstName-input" type="text" placeholder="First name" required>
+                </div>
+                <div>
+                    <label for="lastName-input">Last Name</label>
+                    <input id="lastName-input" type="text" placeholder="Last name" required>
+                </div>
+            </section>
+
+            <label for="email-input">Your email</label>
+            <input id="email-input" type="email" placeholder="Enter your email address" required>
+
+            <div id="button-container">
+                <button id="email-form-submit" type="submit">Submit &#8594</button>
+                <div id="pseudo">Submit &#8594</div>
+            </div>
+        </form>
+    </body>
+    <!-- javascript -->
+    <script src="/scripts/waiting-list.js"></script>
+</html>

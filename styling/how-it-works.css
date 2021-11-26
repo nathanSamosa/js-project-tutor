@@ -1,0 +1,71 @@
+
+.how-it-works {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 var(--clr-grey-2);
+    background-color: var(--clr-white);
+    text-align: center;
+}
+.how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.how-it-works-item {
+    padding: 0 2rem;
+}
+
+.how-it-works img {
+    width: 150px;
+    margin: auto;
+    filter: invert(80%) sepia(57%) saturate(1691%) hue-rotate(330deg) brightness(103%) contrast(80%);
+}
+
+.how-it-works p {
+    padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .how-it-works-grid {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+}
+
+.wave-background-1,
+.wave-background-2,
+.wave-background-3,
+.wave-background-4 {
+    filter: brightness(0) invert(1);
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    background-image: url("/assets/images/wave.png");
+    background-position: top;
+
+}
+.wave-background-1 {
+    top: -120px;
+    height: 500px;
+    transform: rotate(180deg);
+}
+.wave-background-2 {
+    background: var(--clr-wave);
+    top: 200px;
+    height: 70%;
+    background-position: center;
+}
+.wave-background-3 {
+    background: var(--clr-wave);
+    top: -700px;
+    height: 600px;
+    background-position: center;
+}
+.wave-background-4 {
+    top: -400px;
+    height: 500px;
+    transform: scaleX(-1);
+}
